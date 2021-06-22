@@ -1,0 +1,228 @@
+html, body {
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+
+.Überschrift {
+  text-align: center;
+  font-family: 'Sacramento',cursive;
+  font-size: 45px;
+  color: #76756e;
+  margin-top: 60px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-size: 25px;
+  color: #76756e;
+  margin-left: 70px;
+  margin-right:70px;
+  text-align: center;
+}
+
+hr {
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 50px;
+
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+#LOGO {
+  text-align: center;
+  font-size: 50px;
+  margin: 15px;
+  color: #76756e;
+}
+
+#footer {
+  background-color: #dbe4e6;
+  padding: 50px;
+  margin-top: 70px;
+  color: #76756e;
+}
+
+#footerinhalt {
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+}
+
+#Kontakt {
+  text-align: center;
+
+}
+#warenkorb {
+  width: 40px;
+  height:40px;
+  position: sticky;
+}
+/* START Navigation */
+nav {
+    background-color: #F6f4f4;
+    padding: 0px 20px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1), 0 1px 10px 0 rgba(0,0,0,0.1);
+    font-size: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+
+}
+
+nav ul li {
+    padding: 0;
+    display: inline-block;
+}
+
+nav a {
+    font-size: 40px;
+    padding: 15px;
+    display: inline-block;
+    color: #76756e;
+    text-decoration: none;
+    font-family: 'Sacramento',cursive;
+}
+
+nav a.active, nav a:hover {
+    background: rgba(46,46,43, 0.2);
+    color: #76756e;
+}
+
+
+#burger {
+  width: 50px;
+  height: 50px;
+  padding: 5px 5px 5px 5px;
+}
+/* END Navigation */
+
+/* START Section, Article */
+section, article {
+    margin: 20px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
+}
+/* END Section, Article */
+
+/* START Shop */
+
+/* END Shop */
+
+/* START Newsletter */
+#newslettercontainer{
+  background-color: #dbe4e6;
+  height: 200px;
+}
+/* END Newsletter */
+
+/* START FOOTER*/
+a.link {
+  color: #76756e
+}
+a.link:active {
+  color: #76756e
+}
+a.link:visited {
+  color: white;
+}
+a.link:hover {
+  color: white;
+
+}
+/* END FOOTER */
+/* START Responsive */
+@media screen
+  and (max-width: 992px)
+  {
+.hidden-tablet {
+  display: none;
+ }
+}
+
+@media screen
+  and (max-width: 768px)
+{
+  .hidden-mobile {
+    display: none;
+  }
+
+  .block {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  nav {
+  padding-left: 0px;
+ }
+
+  nav a.active {
+    width: 100%;
+    padding-left: 0px;
+
+  }
+
+  nav a:hover {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+
+@media screen
+  and (max-width: 768px)
+  {
+.only-mobile {
+  display: none;
+}
+}
+
+@media screen
+and (max-width: 992px)
+and (min-width: 769px)
+  {
+.only-tablet {
+  display: none;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+
+}
+}
+
+@media screen
+  and (min-width: 992px)
+  {
+.only-desktop {
+  display: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+}
+
+@font-face {
+font-family: MoonTime-Regular;
+src: url('fonts/MoonTime-Regular-www.Dfonts.org/MoonTime-Regular.otf')
+format("opentype");
+}
+
+@font-face {
+font-family: MoonTime-Regular;
+src: url('fonts/MoonTime-Regular-www.Dfonts.org/MoonTime-Regular.otf')
+format("opentype");
+}
