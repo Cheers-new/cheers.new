@@ -11,6 +11,7 @@
 
     <link rel="icon" href="Images/VINO.png" type="image/png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,7 +23,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sacramento&display=swap" rel="stylesheet">
 
-
     <title>
       CHEERS.
     </title>
@@ -31,9 +31,12 @@
 <body>
 
 <div>
-  <p id="LOGO"> CHEERS. <p>
-  <img src="Images/warenkorb.png" id="warenkorb">
+  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#76756e"  viewBox="0 0 16 16" id="warenkorb">
+  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg>
+  <p id="LOGO" class="font-weight-light"> CHEERS. <p>
 </div>
+<!-- START Navbar -->
 <nav>
     <ul id="navliste" class="hidden-mobile">
         <li class="block"><a href="#mission">Mission</a></li>
@@ -45,7 +48,9 @@
     </ul>
     <img src="Images/BurgerMenu.png" alt="Burger-menu" class="only-desktop only-tablet" id="burger">
 </nav>
+<!-- END Navbar -->
 
+<!-- START Mission -->
 <img src="Images/Flaschen_liegend.jpg" alt="Flaschen liegend">
 <p class="Überschrift"> Mission <p>
 <hr color=#dbe4e6>
@@ -56,29 +61,57 @@
       Unser CHEERS-Riesling, sowie unser einzigartiger Rosé schmecken am besten in Gesellschaft, denn wir stehen für Zusammenhalt und verbinden Freundschaft mit einem erfrischenden Geschmackserlebnis.
     </p>
 </div>
+<!-- END Mission -->
 
+<!-- START Shop -->
 <p class="Überschrift" id="shop"> Shop <p>
 <hr color=#dbe4e6>
 
 <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-      </div>
+<div class="row" style="padding: 60px; background: #dbe4e6;">
+
+  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" style="">
+  <div class="card">
+
+    <img class="card-img-top" src="Images/Produktbild_Rose.jpg" alt="Unser Rosé">
+      <div class="card-body">
+        <h4 class="card-title d-flex justify-content-center" style="color: #76756e;"> Rosé 2020</h4>
+        <hr>
+          <p class="card-text d-flex justify-content-center">
+            So macht Rosé Spaß!
+            Auf der Zunge fruchtig, spritzig und lebendig mit viel Trinkfluss.
+
+
+          </p>
+          <a href="#" class="btn btn-outline-secondary d-flex justify-content-center" onclick="myFunctionRose()"> In den Warenkorb legen </a>
+        </div>
+
     </div>
-    <div class="row">
-      <div class="col-6">
-        <img src="Images/Produktbild_Rose.jpg" alt="Unser Rosé">
-      </div>
   </div>
 
-  <div class="row">
-    <div class="col-6">
-        <img src="Images/Produktbild_Riesling.jpg" alt="Unser Riesling">
-      </div>
+
+  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" style="">
+  <div class="card">
+
+    <img class="card-img-top" src="Images/Produktbild_Riesling2.jpeg" alt="Unser Riesling">
+      <div class="card-body">
+        <h4 class="card-title d-flex justify-content-center" style="color: #76756e;">Riesling 2020</h4>
+        <hr>
+          <p class="card-text d-flex justify-content-center">
+            So macht Riesling Spaß!
+            Mit feinen Fruchtaromen und einem
+            Spiel der Leichtigkeit.
+          </p>
+          <a href="#" class="btn btn-outline-secondary d-flex justify-content-center" onclick="myFunctionRiesling()"> In den Warenkorb legen </a>
+        </div>
+
     </div>
+  </div>
 </div>
 </section>
+<!-- END Shop -->
+
+<!-- START Lage -->
 <p class="Überschrift" id="lage"> Lage <p>
 <hr color=#dbe4e6>
 
@@ -96,6 +129,9 @@
       </div>
     </div>
 </div>
+<!-- END Lage -->
+
+<!-- START Das sind Wir -->
 <p class="Überschrift" id="DasSindWir"> Das sind wir <p>
 <hr color=#dbe4e6>
 <p>
@@ -104,24 +140,43 @@
   Wir studieren im dritten Semester Media Management an der Hochschule RheinMain und kommen aus dem wunderschönen Rheinhessen.
   CHEERS. ist unser Herzensprojekt. Unser Ziel war es, einen Wein zu produzieren, der den Geldbeutel von uns jungen Leuten nicht so sehr belastet, aber trotzdem geschmackvoll und modern gestaltet ist.
 </p>
+<div class="d-flex justify-content-center">
+<a href="https://instagram.com/cheers.mec?utm_medium=copy_link" target="_blank">
+  <button type="button" class="btn btn-outline-secondary" >Follow us on Instagram</button>
+</a>
+</div>
+<!-- END Das sind Wir -->
 
+<!-- START Newsletter -->
 <p class="Überschrift" id="newsletter"> Newsletter <p>
 <hr color=#dbe4e6>
 <div id="newslettercontainer">
   <p> Abonnieren Sie hier unseren Newsletter! </p>
-<form action="foo.bar" method="get">
-  <label for "email" >E-Mail:</label>
-  <input type="email" id="email">
-  <button type="submit"> Abschicken </button>
-</div>
 
+  <form class="form-inline" style="justify-content: center;">
+    <label class="sr-only" for="inlineFormInputName2">Name</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Name, Vorname">
 
+    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <div class="input-group-prepend">
+
+      </div>
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="E-Mail">
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-2" style="background-color: #fff; border-color: #fff; color: #76756e;">Submit</button>
+  </form>
+<!-- END Newsletter -->
+
+<!-- START Kontakt -->
 <p class="Überschrift" id="kontakt"> Kontakt<p>
 <hr color=#dbe4e6>
 <div id="Kontakt">
 <p>Weingasse 12, 55283 Nierstein</p>
 <p>Telefon: <a href="tel:0123456789">06133/659872</a></p>
 <p>E-Mail: <a href="mailto:kontakt.cheers@gmx.de">kontakt.cheers@gmx.de </a></p>
+<!-- END Kontakt -->
 
 <script src="https://kit.fontawesome.com/fb859286eb.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
